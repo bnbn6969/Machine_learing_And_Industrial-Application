@@ -1,0 +1,12 @@
+
+
+
+column =10
+index = 0
+data = [[0]*4 for i in range(column)]
+while index < 100:
+    for i in range(column):
+        for j in range(4):
+            data[i][j] = data[index]
+            index = index+1
+print(data[0])
